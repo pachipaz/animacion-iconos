@@ -1,0 +1,111 @@
+body {
+	background-image: url("star.jpg");
+}
+h1 {
+	color:white;
+	text-align: center;
+	font-size: 100px;
+}
+.circulo1 {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background-color:#01DFD7;
+	display: inline-block;
+	margin-top: 150px;
+	margin-left: 278px;
+	animation: play 3.1s steps(1) infinite;
+
+}
+.circulo2{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: white 4px solid;
+	background-color:#00BFFF;
+	display: inline-block;
+	margin-left: 50px;
+}
+.circulo2:hover {
+	border-style: dashed;
+}
+.circulo3 {
+	width: 200px;
+	height:200px;
+	border-radius:100px;
+	background-color:#819FF7;
+	display: inline-block;
+	margin-left: 50px;
+}
+.fa{
+	color:white;
+	margin-left: 61px;
+    margin-top: 53px
+}
+/*Animaciones*/
+
+/* Effect 4b */
+.circulo1 .fa-star:hover {
+	-webkit-transition: box-shadow 0.2s;
+	-moz-transition: box-shadow 0.2s;
+	transition: box-shadow 0.2s;
+}
+
+.circulo1 .fa-star:hover {
+	-webkit-animation: spinAround 9s linear infinite;
+	-moz-animation: spinAround 9s linear infinite;
+	animation: spinAround 9s linear infinite;
+}
+
+@-webkit-keyframes spinAround {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spinAround {
+	from {
+		-moz-transform: rotate(0deg)
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*circulo2*/
+@keyframes play {
+	0% {background-position: 0 0}
+	25%{background-position: 20px 0}
+	45%{background-position: 40px 0}
+}
+
+
+/*circulo 3*/
+.circulo3 .fa-moon-o {
+	color: #f06060;
+}
+
+.circulo3 .fa-moon-o:hover {
+	color: #fff;
+}
+
+.circulo3 .fa-moon-o:hover:after {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	opacity: 0;
+}
+
+
